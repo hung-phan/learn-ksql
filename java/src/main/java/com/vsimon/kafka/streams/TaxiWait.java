@@ -14,7 +14,7 @@ import io.confluent.ksql.function.udf.UdfParameter;
 public class TaxiWait {
 
 
-    @Uf(description = "Given weather and distance return expected wait time in minutes")
+    @Udf(description = "Given weather and distance return expected wait time in minutes")
     public double taxi_wait(final String weather_description,  final double dist) {
 
         double ret = -1;
